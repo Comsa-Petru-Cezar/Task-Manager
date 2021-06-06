@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/stageItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:onClick="stageClick"
+
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
+
+
+    <ImageButton
+        android:id="@+id/showTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_details_24dp"
+        android:onClick="show"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <ImageButton
+        android:id="@+id/hideTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_change_24dp"
+        android:onClick="hide"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <ImageButton
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="15dp"
+        android:background="@null"
+        android:onClick="newTask"
+        android:src="@drawable/ic_add_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/hideTasks"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/taskName"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/text"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/addTask"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem"
+        />
+
+    <ImageButton
+        android:id="@+id/cancelTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:background="@null"
+        android:onClick="cancelTask"
+        android:src="@drawable/ic_remove_24dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/taskName"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+
+    <ImageButton
+        android:id="@+id/moveUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_up_24dp"
+        android:onClick="moveUp"
+        android:paddingLeft="30dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/showTasks"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <ImageButton
+        android:id="@+id/moveDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_down_24dp"
+        android:onClick="moveDown"
+        android:paddingLeft="30dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/moveUp"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <ImageButton
+        android:id="@+id/deleteStage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="remove"
+        android:paddingLeft="30dp"
+        android:src="@drawable/delete_icon"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/moveDown"
+        app:layout_constraintTop_toBottomOf="@+id/stageItem" />
+
+    <ListView
+        android:id="@+id/tasks_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hideTasks"
+        >
+
+
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

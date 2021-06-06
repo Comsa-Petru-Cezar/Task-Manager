@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ProjectPage">
+
+    <ListView
+        android:id="@+id/stages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/padding_project1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="invisible" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/stageName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:textColor="@color/text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/padding_project2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/newStage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#010726"
+        android:onClick="newStage"
+        android:text="@string/new_stage"
+        android:textColor="@color/text"
+        android:visibility="visible"
+        tools:context=".ProjectPage" />
+
+    <TextView
+        android:id="@+id/padding_project3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/cancel_stage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#010726"
+        android:onClick="cancelStage"
+        android:text="@string/cancel_stage"
+        android:textColor="@color/text"
+        android:visibility="gone"
+        tools:context=".ProjectPage" />
+
+    <TextView
+        android:id="@+id/padding_project4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="invisible" />
+
+
+</LinearLayout>

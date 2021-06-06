@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">list</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="new_project">New Project</string>
+    <string name="create_project">Create Project</string>
+    <string name="cancel_project">Cancel Project</string>
+
+    <string name="new_stage">New Stage</string>
+    <string name="create_stage">Create Stage</string>
+    <string name="cancel_stage">Cancel Stage</string>
+    <string name="projectSer">projectSerializable</string>
+
+    <string name="show">Show Tasks</string>
+    <string name="up">Move Up</string>
+    <string name="down">Move Down</string>
+    <string name="remove">Remove</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add task</string>
+
+    <string name="prim">primus</string>
+    <string name="sec">secundus</string>
+
+
+
+</resources>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <ListView
+        android:id="@+id/projects_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/padding_main1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="invisible" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:textColor="@color/text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/padding_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/new_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#010726"
+        android:onClick="newProject"
+        android:text="@string/new_project"
+        android:visibility="visible"
+        android:textColor="@color/text"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/padding_main3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/cancel_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#010726"
+        android:onClick="cancelProject"
+        android:text="@string/cancel_project"
+        android:textColor="@color/text"
+        android:visibility="gone"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/padding_main4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:visibility="invisible" />
+
+    <!--
+
+
+
+
+         -->
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/projectItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="@color/text"
+        android:gravity="left|center_vertical"
+        android:onClick="projectClick"
+        android:paddingLeft="15dp"
+        ></Button>
+
+
